@@ -1,0 +1,6 @@
+Hello {{pharmacy_name}}!
+
+We have great daily offers for you today:
+{{daily_offers}}
+
+Don't miss out!
