@@ -4,13 +4,11 @@ from automation.message_utils import load_message_template
 
 
 def main():
-    # Fetch pharmacy data
-    API_URL = "https://clusterapp.net/doc/#api-Supplier_-_Marketing-FetchMarketingMedicines"
-    CREDENTIALS = {"id": "01155322655", "password": "password"}
-    data = fetch_pharmacy_data(API_URL, CREDENTIALS)
+    API_URL = "https://cluster.designfy.net/api/supplier/marketing"
+    data = fetch_pharmacy_data(API_URL)
 
     if data and data.get("success"):
-        pharmacies = data["pharmacies"]["data"]
+        pharmacies = data["pharmacies"] 
         daily_offers = data["dailySupplies"]
 
         # Initialize WhatsApp bot

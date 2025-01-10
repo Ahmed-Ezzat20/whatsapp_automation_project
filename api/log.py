@@ -14,8 +14,8 @@ def login(endpoint_url: str) -> dict:
     """
     # Prepare the form data
     form_data = {
-        'phone': "01000100100",
-        'password': "Az@100100"
+        'phone': "....",
+        'password': "...."
     }
     
     try:
